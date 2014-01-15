@@ -15,7 +15,19 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0F4A2B3883C847249D87BF0C8EAEC9F5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5CF7B56B7A2944B2BE506944C228C4E1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6A6FD15A03AC4D88B2B8BE68AC270B2D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,6 +46,12 @@
         "Entry"
         {
         "MsmKey" = "8:_F1DCB4B374C44B78B02A551AB61E3805"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FDE87745DCF94E1BAFF8C6298030D59B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -176,10 +194,50 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0F4A2B3883C847249D87BF0C8EAEC9F5"
+            {
+            "SourcePath" = "8:..\\OBS_Timer\\icons\\Uninstall.ico"
+            "TargetName" = "8:Uninstall.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5CF7B56B7A2944B2BE506944C228C4E1"
             {
             "SourcePath" = "8:..\\OBS_Timer\\README.txt"
             "TargetName" = "8:README.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6A6FD15A03AC4D88B2B8BE68AC270B2D"
+            {
+            "SourcePath" = "8:..\\License.txt"
+            "TargetName" = "8:License.txt"
             "Tag" = "8:"
             "Folder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
             "Condition" = "8:"
@@ -222,6 +280,26 @@
             "TargetName" = "8:obs_timer_text.txt"
             "Tag" = "8:"
             "Folder" = "8:_774E34C88EA2411386431A8A365C1663"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FDE87745DCF94E1BAFF8C6298030D59B"
+            {
+            "SourcePath" = "8:..\\OBS_Timer\\icons\\Text.ico"
+            "TargetName" = "8:Text.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -326,7 +404,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OBS Timer"
         "ProductCode" = "8:{520B7F75-3181-4F43-A560-B40AA331063E}"
-        "PackageCode" = "8:{836F550F-CFEF-4528-85CB-1F610DF40D82}"
+        "PackageCode" = "8:{A5FD42FB-174B-4782-89D4-C2DFFEC20652}"
         "UpgradeCode" = "8:{9F63C3C7-E8B4-4EEF-B741-3B13655F88EA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -457,7 +535,7 @@
             "Target" = "8:_5CF7B56B7A2944B2BE506944C228C4E1"
             "Folder" = "8:_641954C8644347A3A0CA6881FD37D0F4"
             "WorkingFolder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
-            "Icon" = "8:"
+            "Icon" = "8:_FDE87745DCF94E1BAFF8C6298030D59B"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_76C6C40115A5484A8B43882EF94CDA37"
@@ -466,12 +544,12 @@
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
+            "IconIndex" = "3:32512"
             "Transitive" = "11:FALSE"
             "Target" = "8:_8F4F9E74AD5140CF9DB72853FC936795"
             "Folder" = "8:_641954C8644347A3A0CA6881FD37D0F4"
             "WorkingFolder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
-            "Icon" = "8:"
+            "Icon" = "8:_8F4F9E74AD5140CF9DB72853FC936795"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_77233395195441C98FAAC8B035D791EA"
@@ -485,7 +563,21 @@
             "Target" = "8:_CD78AA5C6D5542D998B0A3EC6D7246CA"
             "Folder" = "8:_641954C8644347A3A0CA6881FD37D0F4"
             "WorkingFolder" = "8:_B3B0266BA55141B6A0D0983EC3FF3F5A"
-            "Icon" = "8:"
+            "Icon" = "8:_0F4A2B3883C847249D87BF0C8EAEC9F5"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9E4A00F73E1548F7A755C554DE5BC23D"
+            {
+            "Name" = "8:OBS Timer - License"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_6A6FD15A03AC4D88B2B8BE68AC270B2D"
+            "Folder" = "8:_641954C8644347A3A0CA6881FD37D0F4"
+            "WorkingFolder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
+            "Icon" = "8:_FDE87745DCF94E1BAFF8C6298030D59B"
             "Feature" = "8:"
             }
         }
