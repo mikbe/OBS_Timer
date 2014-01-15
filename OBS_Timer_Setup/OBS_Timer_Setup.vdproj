@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_33F5342AD0BE490CBE2BFEAF7C163C34"
+        "MsmKey" = "8:_348F172BAEE2473481CD07846ABAAD55"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -55,6 +55,27 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -71,6 +92,27 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -100,9 +142,9 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_33F5342AD0BE490CBE2BFEAF7C163C34"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_348F172BAEE2473481CD07846ABAAD55"
             {
-            "SourcePath" = "8:..\\OBS_Timer\\README.txt"
+            "SourcePath" = "8:..\\OBS_Timer\\README"
             "TargetName" = "8:README.txt"
             "Tag" = "8:"
             "Folder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
@@ -219,7 +261,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OBS Timer"
         "ProductCode" = "8:{8C0D0DC1-D49A-4444-9E15-BBF6972521A4}"
-        "PackageCode" = "8:{1F5A5F81-BA8F-495C-ABEC-1F448FBD241C}"
+        "PackageCode" = "8:{8B506347-1575-40F8-B86C-20FACE34B371}"
         "UpgradeCode" = "8:{9F63C3C7-E8B4-4EEF-B741-3B13655F88EA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -367,7 +409,7 @@
             "Icon" = "8:"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8505FD03E8CC476AA74894428A6D51BB"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C72E678E9FBF41978322ED43EA744597"
             {
             "Name" = "8:README"
             "Arguments" = "8:"
@@ -375,7 +417,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_33F5342AD0BE490CBE2BFEAF7C163C34"
+            "Target" = "8:_348F172BAEE2473481CD07846ABAAD55"
             "Folder" = "8:_641954C8644347A3A0CA6881FD37D0F4"
             "WorkingFolder" = "8:_D213C48F3D354C5F9D5468BC3284FE12"
             "Icon" = "8:"

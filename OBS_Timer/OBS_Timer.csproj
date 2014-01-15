@@ -104,9 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1380_wall_clockFINAL.ico" />
-    <Content Include="README.txt">
+    <None Include="README">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
