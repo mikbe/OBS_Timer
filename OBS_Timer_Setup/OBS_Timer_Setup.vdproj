@@ -555,7 +555,7 @@
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_77233395195441C98FAAC8B035D791EA"
             {
             "Name" = "8:Uninstall OBS Timer"
-            "Arguments" = "8:"
+            "Arguments" = "8:/x [ProductCode]"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
