@@ -22,8 +22,7 @@ Type whatever text you want in the message box, this will be saved for the next 
 
 The countdown timer will be added to the end of your text and saved to the output text file.  
 
-The file is located in the same directory as the application which should be:  
-C:\Program Files (x86)\OBS Timer\obs_timer_text.txt  
+The text file to use with OBS is located in your "My Documents" directory and is named obs_timer_text.txt.
 
 The buttons below the message box are how you set the countdown timer.  
 

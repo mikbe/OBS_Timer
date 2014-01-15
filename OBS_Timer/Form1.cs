@@ -19,12 +19,13 @@ namespace OBS_Timer
         private DateTime _nulltime;
         private TimeSpan _zeroTime = new TimeSpan(0);
 
-        private String _textFilePath = AppDomain.CurrentDomain.BaseDirectory + "obs_timer_text.txt";
+        private String _textFilePath = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\obs_timer_text.txt";
 
 
         public OBS_Timer()
         {
             InitializeComponent();
+            Debug.WriteLine(_textFilePath);
             writeMessageFile("");
             addButtonEvents();
             setOutputText();

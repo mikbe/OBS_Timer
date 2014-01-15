@@ -33,6 +33,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_F1DCB4B374C44B78B02A551AB61E3805"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_8F4F9E74AD5140CF9DB72853FC936795"
         "MsmSig" = "8:_UNDEFINED"
@@ -119,6 +125,34 @@
     {
         "CustomAction"
         {
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_D397177F78D347F99A6A5D2A4B3D70A1"
+            {
+            "Name" = "8:Primary output from OBS_Timer (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_8F4F9E74AD5140CF9DB72853FC936795"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_CB869D2D_1CB8_41A6_B563_80F3186ADA0C"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_F57BF96DA81243D08F112637F3F45CBC"
+            {
+            "Name" = "8:Primary output from OBS_Timer (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_8F4F9E74AD5140CF9DB72853FC936795"
+            "FileType" = "3:2"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_A5C68544_ACCF_4989_844A_B0F7A81409C8"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
         }
         "DefaultFeature"
         {
@@ -182,6 +216,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F1DCB4B374C44B78B02A551AB61E3805"
+            {
+            "SourcePath" = "8:..\\OBS_Timer\\obs_timer_text.txt"
+            "TargetName" = "8:obs_timer_text.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_774E34C88EA2411386431A8A365C1663"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -219,6 +273,17 @@
                         {
                         }
                     }
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_774E34C88EA2411386431A8A365C1663"
+            {
+            "Name" = "8:#1918"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:PersonalFolder"
+                "Folders"
+                {
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_B3B0266BA55141B6A0D0983EC3FF3F5A"
@@ -260,15 +325,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OBS Timer"
-        "ProductCode" = "8:{8C0D0DC1-D49A-4444-9E15-BBF6972521A4}"
-        "PackageCode" = "8:{46A42E00-9167-485F-927A-332A0488896F}"
+        "ProductCode" = "8:{520B7F75-3181-4F43-A560-B40AA331063E}"
+        "PackageCode" = "8:{836F550F-CFEF-4528-85CB-1F610DF40D82}"
         "UpgradeCode" = "8:{9F63C3C7-E8B4-4EEF-B741-3B13655F88EA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:0.1.0"
         "Manufacturer" = "8:MikeBethany.com"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
