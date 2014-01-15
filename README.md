@@ -3,7 +3,7 @@
 ### mikebethany.com
 
 
-**Description:**
+**Description:**  
 OBS Timer is a very simple countdown timer that outputs a text file you can use in the Open Broadcast Software streaming app.  
 
 I wrote this app specifically for use with iRacing but it can be used with any 15 minute interval thing you want to do.  
