@@ -30,5 +30,8 @@ To stop the count down press the stop button, close the app, or wait for the tim
 When the countdown ends the text file will be set to empty so in OBS the text effectively goes away:  
 no need to micromanage the timer.  
 
-**Version History:**  
+**Version History:**
+0.2.0 - 2014.02.15  
+Added timer offset.   
+  
 0.1.0 - 2014.01.14 - Initial Release  
