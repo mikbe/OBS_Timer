@@ -21,14 +21,13 @@ namespace OBS_Timer
 
         private String _textFilePath = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\obs_timer_text.txt";
 
-
         public OBS_Timer()
         {
             InitializeComponent();
-            Debug.WriteLine(_textFilePath);
             writeMessageFile("");
             addButtonEvents();
             setOutputText();
+            initCountdownOffsetScroller();
         }
 
         private void timerClock_Tick(object sender, EventArgs e)
@@ -44,12 +43,12 @@ namespace OBS_Timer
         {
             iterateButtons((button) =>
             {
-                button.Click += new EventHandler(setCountdown);
+                button.Click += new EventHandler(setCountdownText);
             }
             );
         }
 
-        private void setCountdown(object button_object, EventArgs args)
+        private void setCountdownText(object button_object, EventArgs args)
         {
             _countdownTime = futureTime((Button)button_object);
             this.btnStop.Enabled = true;
@@ -70,6 +69,8 @@ namespace OBS_Timer
 
                 if (countDown > _zeroTime)
                 {
+                    int countdownOffsetSeconds = readCountdownOffsetSeconds();
+                    countDown = countDown.Add(new TimeSpan(0, 0, countdownOffsetSeconds)); 
                     countdownText = countDown.ToString(@"hh\:mm\:ss");
                     writeMessageFile(countdownText);
                 }
@@ -172,7 +173,40 @@ namespace OBS_Timer
             stopCountdown();
         }
 
+        private void initCountdownOffsetScroller()
+        {
+            this.scrollCountOffset.Value = readCountdownOffsetSeconds() / 15;
+            setCountdownOffsetSecondsText();
+        }
 
+        private void scrollCountdownOffset_Scroll(object sender, ScrollEventArgs e)
+        {
+            int seconds = e.NewValue * 15;
+            updateCountdownOffsetSeconds(seconds);
+    
+        }
+
+        private void updateCountdownOffsetSeconds(int seconds)
+        {
+            saveCountdownOffsetSeconds(seconds);
+            setCountdownOffsetSecondsText();
+        }
+
+        private int readCountdownOffsetSeconds()
+        {
+            return (int)Properties.Settings.Default.CountdownOffsetSeconds;
+        }
+
+        private void saveCountdownOffsetSeconds(int seconds)
+        {
+            Properties.Settings.Default["CountdownOffsetSeconds"] = seconds;
+            Properties.Settings.Default.Save();
+        }
+
+        private void setCountdownOffsetSecondsText()
+        {
+            this.lblCountOffset.Text = readCountdownOffsetSeconds().ToString();
+        }
 
     }
 }

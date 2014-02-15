@@ -41,10 +41,6 @@
             this.btn0130 = new System.Windows.Forms.Button();
             this.btn0200 = new System.Windows.Forms.Button();
             this.btn0145 = new System.Windows.Forms.Button();
-            this.btn0300 = new System.Windows.Forms.Button();
-            this.btn0245 = new System.Windows.Forms.Button();
-            this.btn0215 = new System.Windows.Forms.Button();
-            this.btn0230 = new System.Windows.Forms.Button();
             this.txtTimerMessage = new System.Windows.Forms.TextBox();
             this.btnStop = new System.Windows.Forms.Button();
             this.grpButtons = new System.Windows.Forms.GroupBox();
@@ -52,11 +48,15 @@
             this.grpCountdown = new System.Windows.Forms.GroupBox();
             this.grpTime = new System.Windows.Forms.GroupBox();
             this.grpStop = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.scrollCountOffset = new System.Windows.Forms.VScrollBar();
+            this.lblCountOffset = new System.Windows.Forms.Label();
             this.grpButtons.SuspendLayout();
             this.grpMessage.SuspendLayout();
             this.grpCountdown.SuspendLayout();
             this.grpTime.SuspendLayout();
             this.grpStop.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timerClock
@@ -176,50 +176,6 @@
             this.btn0145.Text = "01:45";
             this.btn0145.UseVisualStyleBackColor = true;
             // 
-            // btn0300
-            // 
-            this.btn0300.Font = new System.Drawing.Font("Calibri", 20F);
-            this.btn0300.Location = new System.Drawing.Point(318, 192);
-            this.btn0300.Name = "btn0300";
-            this.btn0300.Size = new System.Drawing.Size(136, 45);
-            this.btn0300.TabIndex = 4;
-            this.btn0300.Tag = "180";
-            this.btn0300.Text = "03:00";
-            this.btn0300.UseVisualStyleBackColor = true;
-            // 
-            // btn0245
-            // 
-            this.btn0245.Font = new System.Drawing.Font("Calibri", 20F);
-            this.btn0245.Location = new System.Drawing.Point(318, 141);
-            this.btn0245.Name = "btn0245";
-            this.btn0245.Size = new System.Drawing.Size(136, 45);
-            this.btn0245.TabIndex = 4;
-            this.btn0245.Tag = "165";
-            this.btn0245.Text = "02:45";
-            this.btn0245.UseVisualStyleBackColor = true;
-            // 
-            // btn0215
-            // 
-            this.btn0215.Font = new System.Drawing.Font("Calibri", 20F);
-            this.btn0215.Location = new System.Drawing.Point(318, 39);
-            this.btn0215.Name = "btn0215";
-            this.btn0215.Size = new System.Drawing.Size(136, 45);
-            this.btn0215.TabIndex = 4;
-            this.btn0215.Tag = "135";
-            this.btn0215.Text = "02:15";
-            this.btn0215.UseVisualStyleBackColor = true;
-            // 
-            // btn0230
-            // 
-            this.btn0230.Font = new System.Drawing.Font("Calibri", 20F);
-            this.btn0230.Location = new System.Drawing.Point(318, 90);
-            this.btn0230.Name = "btn0230";
-            this.btn0230.Size = new System.Drawing.Size(136, 45);
-            this.btn0230.TabIndex = 4;
-            this.btn0230.Tag = "150";
-            this.btn0230.Text = "02:30";
-            this.btn0230.UseVisualStyleBackColor = true;
-            // 
             // txtTimerMessage
             // 
             this.txtTimerMessage.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -247,19 +203,15 @@
             this.grpButtons.Controls.Add(this.btn0015);
             this.grpButtons.Controls.Add(this.btn0100);
             this.grpButtons.Controls.Add(this.btn0045);
-            this.grpButtons.Controls.Add(this.btn0300);
-            this.grpButtons.Controls.Add(this.btn0215);
-            this.grpButtons.Controls.Add(this.btn0230);
             this.grpButtons.Controls.Add(this.btn0130);
             this.grpButtons.Controls.Add(this.btn0145);
-            this.grpButtons.Controls.Add(this.btn0245);
             this.grpButtons.Controls.Add(this.btn0115);
             this.grpButtons.Controls.Add(this.btn0200);
             this.grpButtons.Controls.Add(this.btn0030);
             this.grpButtons.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpButtons.Location = new System.Drawing.Point(12, 212);
             this.grpButtons.Name = "grpButtons";
-            this.grpButtons.Size = new System.Drawing.Size(483, 266);
+            this.grpButtons.Size = new System.Drawing.Size(327, 266);
             this.grpButtons.TabIndex = 9;
             this.grpButtons.TabStop = false;
             this.grpButtons.Text = "Timer Buttons";
@@ -306,17 +258,54 @@
             this.grpStop.TabIndex = 13;
             this.grpStop.TabStop = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.scrollCountOffset);
+            this.groupBox1.Controls.Add(this.lblCountOffset);
+            this.groupBox1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Location = new System.Drawing.Point(346, 212);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(149, 266);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Count Offset";
+            // 
+            // scrollCountOffset
+            // 
+            this.scrollCountOffset.LargeChange = 1;
+            this.scrollCountOffset.Location = new System.Drawing.Point(18, 95);
+            this.scrollCountOffset.Maximum = 3;
+            this.scrollCountOffset.Name = "scrollCountOffset";
+            this.scrollCountOffset.Size = new System.Drawing.Size(113, 142);
+            this.scrollCountOffset.TabIndex = 2;
+            this.scrollCountOffset.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scrollCountdownOffset_Scroll);
+            // 
+            // lblCountOffset
+            // 
+            this.lblCountOffset.AutoSize = true;
+            this.lblCountOffset.Font = new System.Drawing.Font("Calibri", 40F);
+            this.lblCountOffset.Location = new System.Drawing.Point(38, 29);
+            this.lblCountOffset.Name = "lblCountOffset";
+            this.lblCountOffset.Size = new System.Drawing.Size(82, 66);
+            this.lblCountOffset.TabIndex = 1;
+            this.lblCountOffset.Text = "00";
+            this.lblCountOffset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // OBS_Timer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 600);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpStop);
             this.Controls.Add(this.grpTime);
             this.Controls.Add(this.grpCountdown);
             this.Controls.Add(this.grpMessage);
             this.Controls.Add(this.grpButtons);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(529, 638);
+            this.MinimumSize = new System.Drawing.Size(529, 638);
             this.Name = "OBS_Timer";
             this.Text = "OBS Timer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OBS_Timer_FormClosing);
@@ -328,6 +317,8 @@
             this.grpTime.ResumeLayout(false);
             this.grpTime.PerformLayout();
             this.grpStop.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -345,10 +336,6 @@
         private System.Windows.Forms.Button btn0130;
         private System.Windows.Forms.Button btn0200;
         private System.Windows.Forms.Button btn0145;
-        private System.Windows.Forms.Button btn0300;
-        private System.Windows.Forms.Button btn0245;
-        private System.Windows.Forms.Button btn0215;
-        private System.Windows.Forms.Button btn0230;
         private System.Windows.Forms.TextBox txtTimerMessage;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.GroupBox grpButtons;
@@ -356,6 +343,9 @@
         private System.Windows.Forms.GroupBox grpCountdown;
         private System.Windows.Forms.GroupBox grpTime;
         private System.Windows.Forms.GroupBox grpStop;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblCountOffset;
+        private System.Windows.Forms.VScrollBar scrollCountOffset;
     }
 }
 

@@ -34,5 +34,17 @@ namespace OBS_Timer.Properties {
                 this["TimerMessage"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CountdownOffsetSeconds {
+            get {
+                return ((int)(this["CountdownOffsetSeconds"]));
+            }
+            set {
+                this["CountdownOffsetSeconds"] = value;
+            }
+        }
     }
 }
