@@ -32,4 +32,7 @@ When the countdown ends the text file will be set to empty so in OBS the text ef
 no need to micromanage the timer.  
 
 **Version History:**  
+0.2.0 - 2014.02.15  
+Added timer offset.   
+  
 0.1.0 - 2014.01.14 - Initial Release  
